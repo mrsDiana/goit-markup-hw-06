@@ -304,7 +304,9 @@ border-radius: 4px;
 .data-input{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
+    display: block;
     cursor: pointer;
+    margin-top: 4px;
 }
 
 .data-input:focus-within,
@@ -333,6 +335,7 @@ border-radius: 4px;
     border-radius: 4px;
     outline: transparent;
     cursor: pointer;
+    margin-top: 4px;
 }
 
 .textaria-input:focus{
