@@ -57,10 +57,11 @@
       <!--Заголовок-->
       <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <div class="content-hero">
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+            <button data-modal-open class="button-blu" type="button">Заказать услугу</button>
 
-          <button data-modal-open class="button-blu" type="button">Заказать услугу</button>
-
+          </div>
           <div data-modal class="backdrop is-hidden">
             <div class="modal">
               <button data-modal-close class="close" type="button">
@@ -69,39 +70,62 @@
                 </svg>
               </button>
               <strong class="text-modal">Оставьте свои данные, мы вам перезвоним</strong>
-              <form action="">
+              <form class="form-modal" action="">
               
-                <label for="name">Имя
-                <input type="text" name="name" id="name"/>
-                </label>
+                <label class="data-lable">Имя
+                  <div class="data-input">
+                    <svg class="data-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs.svg#icon-person"></use>
+                </svg>
+                  <input class="area-input" type="text" name="name"/>
+                  </div>
+                  </label>
 
-                <label for="tel">Телефон
-                <input type="tel" name="tel" id="tel"/>
+                <label class="data-lable">Телефон
+                  <div class="data-input">
+                    <svg class="data-icon" width="18px" height="18px">
+                  <use href="./images/symbol-defs.svg#icon-phone"></use>
+                </svg>
+                  <input class="area-input" type="tel" name="tel"/>
+                  </div>
+                  
                 </label>
                
-                <label for="email">Почта
-                <input type="email" name="mail" id="mail"/>
-                </label>       
+                <label class="data-lable">Почта
+                  <div class="data-input">
+                    <svg class="data-icon" width="18px" height="18px">
+                    <use href="./images/symbol-defs.svg#icon-email"></use>
+                    </svg>
+                  <input class="area-input" type="email" name="mail"/>
+                  </div>
+                  </label>       
       
-                <div>
-                <label for="comment">Комментарий</label>
-                <textarea name="comment" id="comment" rows="8" placeholder="Введите текст"></textarea>
+                
+                <label>Комментарий
+                  <textarea class="textaria-input" name="comment" placeholder="Введите текст"  ></textarea>
+                </label>          
+                                
+                <div class="policy">
+                   <input class="none" type="checkbox" name="policy" id="policy" />
+                   <svg class="chek-policy" width="16px" height="15px">
+                    <use href="./images/symbol-defs.svg#icon-check"></use>
+                    </svg>
+                    <label class="txt-policy" for="policy">                     
+                      Соглашаюсь с рассылкой и принимаю 
+                      <a class="policy-link" href="">Условия договора</a>
+                    </label>  
+                                  
                 </div>
-                </div>
-
-                <div>
-                <input type="checkbox" name="policy" id="policy" />
-                <label for="policy"
-                  >Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label
-                >
-                </div>
+                 
+                
 
                 <button class="button-blu" type="submit">Отправить</button>
             
               </form>
             </div>
-            
           </div>
+            
+        </div>
         </div>
       </section>
       <!--Особенности-->
